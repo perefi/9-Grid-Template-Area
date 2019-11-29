@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gridtemplatearea</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+        }
+    
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        header{
+            width: 100%;
+            height: 290px;
+            
+        }
+        h1 img{
+            width: 40px;
+            height: 40px;
+        }
+        
+        h1{
+            text-align: center;
+            width: 100%;
+            padding: 20px 0 20px 0;
+            border-bottom: 1px grey solid;
+        }
+        
+        h2{text-align: center;
+            padding: 80px 0;
+        
+        }
+/*main*/
+        .container{
+            display: grid;
+            grid-template: repeat(3,1fr)/repeat(4,1fr);
+            grid-gap: 20px;
+            
+        }
+        main figure:first-child{
+            grid-column: span 2;
+            grid-row: span 2;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo.png">
+        </h1>
+        <h2>Minimal &amp; Mindful Curation</h2>
+    </header>
+    <main class="container">
+        <figure>
+            <img src="img/Minimalissimo%20N%C2%B03.jpeg">
+            <figurecaption>Minimalissimo Nº3</figurecaption>
+            <p>GPB 12.00</p>
+        </figure>
+        <figure>
+            <img src="img/Minimalissimo%20N%C2%BA2%20(Digital).jpeg">
+            <figurecaption>Minimalissimo Nº2 (digital) </figurecaption>
+            <p>GBP 3.00</p>
+        </figure>
+        <figure>
+            <img src="img/Blloc%20Zero18.jpeg">
+            <figurecaption>Blloc Zero18</figurecaption>
+            <p>GPB 328.00</p>
+        </figure>
+        <figure>
+            <img src="img/Minimalist%20Writer.jpeg">
+            <figurecaption>Minimalist Writer</figurecaption>
+            <p>GPB 10.00</p>
+        </figure>
+        <figure>
+            <img src="img/Minimalissimo%20Watch.jpeg">
+            <figurecaption>Minimalissimo Watch </figurecaption>
+            <p>GPB 140.00</p>
+        </figure>
+        <figure>
+            <img src="img/minim_6.jpeg">
+            <figurecaption>Minimalist Writer II </figurecaption>
+            <p>GPB 10.00</p>
+        </figure>
+        <figure>
+            <img src="img/newtime-time-21-1-380x.jpg">
+            <figurecaption>Time 2.1 Clock </figurecaption>
+            <p>GPB 160.00</p>
+        </figure>
+    </main>
+    <footer>
+        <h3><a href=""></a></h3>
+        <a href="">Terms</a>
+        <a href="">Contacts</a>
+        <a href="">Privacy</a>
+    </footer>
+</body>
+</html>
